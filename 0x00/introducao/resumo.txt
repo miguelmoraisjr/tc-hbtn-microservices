@@ -1,0 +1,26 @@
+O que são microserviços?
+- Microsserviços são uma abordagem arquitetônica e organizacional do desenvolvimento de software na qual o software consiste em pequenos serviços independentes que se comunicam usando APIs bem definidas. Esses serviços pertencem a pequenas equipes autossuficientes. As arquiteturas de microsserviços facilitam a escalabilidade e agilizam o desenvolvimento de aplicativos, habilitando a inovação e acelerando o tempo de introdução de novos recursos no mercado.
+
+Visão geral da arquitetura Monolítica e de Microsserviços
+- Com as arquiteturas monolíticas, todos os processos são altamente acoplados e executam como um único serviço. Isso significa que se um processo do aplicativo apresentar um pico de demanda, toda a arquitetura deverá ser escalada. A complexidade da adição ou do aprimoramento de recursos de aplicativos monolíticos aumenta com o crescimento da base de código. Essa complexidade limita a experimentação e dificulta a implementação de novas ideias. As arquiteturas monolíticas aumentam o risco de disponibilidade de aplicativos, pois muitos processos dependentes e altamente acoplados aumentam o impacto da falha de um único processo.
+- Com uma arquitetura de microsserviços, um aplicativo é criado como componentes independentes que executam cada processo do aplicativo como um serviço. Esses serviços se comunicam por meio de uma interface bem definida usando APIs leves. Os serviços são criados para recursos empresariais e cada serviço realiza uma única função. Como são executados de forma independente, cada serviço pode ser atualizado, implantado e escalado para atender a demanda de funções específicas de um aplicativo.
+
+Os benefícios da arquitetura de microsserviços - Cite 3 exemplos
+- Liberdade Tecnologica
+	- As arquiteturas de microsserviços não seguem uma abordagem generalista. As equipes são livres para escolher a melhor ferramenta para resolver problemas específicos. O resultado é que as equipes que criam microsserviços podem optar pela melhor ferramenta para cada tarefa.
+
+- Fácil Implantação
+	- Os microsserviços permitem a integração e a entrega contínuas, o que facilita o teste de novas ideias e sua reversão caso algo não funcione corretamente. O baixo custo de falha permite a experimentação, facilita a atualização do código e acelera o tempo de introdução de novos recursos no mercado.
+
+- Escalabilidade Flexível
+	- Os microsserviços permitem que cada serviço seja escalado de forma independente para atender à demanda do recurso de aplicativo oferecido por esse serviço. Isso permite que as equipes dimensionem corretamente as necessidades de infraestrutura, meçam com precisão o custo de um recurso e mantenham a disponibilidade quando um serviço experimenta um pico de demanda.
+
+Quais são os tipos de comunicação entre os microsserviços ?
+- Comunicação por HTTP
+	- HTTP síncronas entre os dois serviços. Esse é um padrão de comunicação viável, mas cria um acoplamento entre os dois serviços que provavelmente não precisamos. Outra opção no espectro HTTP é o HTTP assíncrono entre os dois serviços.
+
+- Comunicação por Mensagens
+	- Diferentemente da comunicação HTTP, os serviços envolvidos não se comunicam diretamente. Ao invés disso, os serviços enviam mensagens para um agente intermediário de mensagens que outros serviços assinam. Isso elimina muita complexidade associada à comunicação HTTP.
+
+- Comunicação Orientada a Eventos
+	- Ao contrário do padrão de mensagens em que os serviços precisam conhecer uma estrutura de mensagens comum, uma abordagem orientada a eventos não precisa disso. A comunicação entre serviços ocorre através de eventos que serviços individuais produzem.
