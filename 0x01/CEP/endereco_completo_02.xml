@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<root>
+<result>
   <bairro>Polo II de Alta Tecnologia (Campinas)</bairro>
   <cidade>Campinas</cidade>
   <logradouro>Rua Doutor Ricardo Benetton Martins, s/n</logradouro>
@@ -14,4 +14,4 @@
     <codigo_ibge>3509502</codigo_ibge>
   </cidade_info>
   <estado>SP</estado>
-</root>
+</result>
