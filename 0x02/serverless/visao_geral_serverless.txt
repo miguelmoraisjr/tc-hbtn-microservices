@@ -1,0 +1,25 @@
+O que é uma arquitetura serveless?
+ - Serverless é um modelo de desenvolvimento nativo em nuvem para criação e execução de aplicações sem o gerenciamento de servidores.
+
+Os servidores ainda são usados nesse modelo, mas eles são abstraídos do desenvolvimento de aplicações. O provedor de nuvem fica responsável pelas tarefas rotineiras de provisionamento, manutenção e escala da infraestrutura do servidor. Os desenvolvedores só precisam empacotar o código em containers para fazer a implantação.
+
+Depois da implantação, as aplicações serverless atendem à demanda e aumentam ou diminuem a escala automaticamente de acordo com as necessidades. As soluções serverless dos provedores de nuvem pública costumam ser oferecidas sob demanda por meio de um modelo de execução orientado a eventos. Por isso, não há cobrança pelas funções serverless não utilizadas.
+
+O que é FaaS (Function as a service) ?
+ - Function as a Service (FaaS) é um serviço de computação em nuvem que busca abstrair a questão de servidor e máquinas onde rodam os seus programas. Em detalhes, ela deriva da filosofia Servless, que delega ao provedor de computação em nuvem (Cloud Provider) provisionar uma plataforma que permita ao cliente: desenvolver, rodar e gerenciar aplicações. Nestes moldes, reduz-se a complexidade de uma pessoa ter que montar e manter a infraestrutura, atual padrão de todo mercado corporativo. Montando uma aplicação com este padrão, implementamos a teoria Servless e criamos uma arquitetura nativa de microsserviços.
+ 
+ Vantangens em usar a Arquitetura Serverless
+ - Gerenciamento operacional simplificado
+ 	- A plataforma Serverless fornece uma separação clara entre serviços de infraestrutura e aplicativos executados no topo da plataforma. A funcionalidade de dimensionamento automático não apenas reduz o custo de computação, mas também as despesas gerais de gerenciamento operacional.
+ - Rápida inovação
+ 	- Os engenheiros de produto podem inovar em ritmo acelerado ou à medida que a arquitetura sem servidor alivia os problemas de engenharia de sistemas na plataforma subjacente. Assim, oferece menos tempo para operações que traduz em uma aplicação suave de DevOps e metodologias ágeis.
+- Custo operacional reduzido
+	- Agora, os serviços que alugavam servidores na AWS, que custavam milhares de dólares, foram reduzidos a menos de US$ 10. Visto que já é uma tendência, os principais provedores de Cloud, como o Google Cloud Platform, a IBM e a Oracle, também fornecem serviços de FaaS.
+
+Entender a diferença entre Arquitetura Monolítica, Microsserviços e Serverless.
+- Com as arquiteturas monolíticas, todos os processos são altamente acoplados e executam como um único serviço. Isso significa que se um processo do aplicativo apresentar um pico de demanda, toda a arquitetura deverá ser escalada. A complexidade da adição ou do aprimoramento de recursos de aplicativos monolíticos aumenta com o crescimento da base de código. Essa complexidade limita a experimentação e dificulta a implementação de novas ideias. As arquiteturas monolíticas aumentam o risco de disponibilidade de aplicativos, pois muitos processos dependentes e altamente acoplados aumentam o impacto da falha de um único processo.
+- Com uma arquitetura de microsserviços, um aplicativo é criado como componentes independentes que executam cada processo do aplicativo como um serviço. Esses serviços se comunicam por meio de uma interface bem definida usando APIs leves. Os serviços são criados para recursos empresariais e cada serviço realiza uma única função. Como são executados de forma independente, cada serviço pode ser atualizado, implantado e escalado para atender a demanda de funções específicas de um aplicativo.	
+- Serverless é um modelo de desenvolvimento nativo em nuvem para criação e execução de aplicações sem o gerenciamento de servidores.
+
+Visão geral sobre computação em nuvem
+- A computação em nuvem é a entrega de recursos de TI sob demanda por meio da Internet com definição de preço de pagamento conforme o uso. Em vez de comprar, ter e manter datacenters e servidores físicos, você pode acessar serviços de tecnologia, como capacidade computacional, armazenamento e bancos de dados, conforme a necessidade, usando um provedor de nuvem como a Amazon Web Services (AWS).
